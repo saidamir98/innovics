@@ -88,7 +88,7 @@ module.exports = {
 module.exports.validate = method => {
   switch (method) {
     case 'postStartup': {
-      return [check('title', 'Please provide a Startup title').exists()];
+      return [check('websiteName', 'Please provide a Startup websiteName').exists()];
     }
   }
 };
