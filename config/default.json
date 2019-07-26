@@ -1,0 +1,6 @@
+{
+  "mongoURI": " mongodb+srv://Steve:inha707@cluster0-gf3lc.mongodb.net/test?retryWrites=true&w=majority",
+  "saltRounds": 10,
+  "jwtSecret": "MyS3cr3tK3Y",
+  "jwtExpiresIn": "240h"
+}
