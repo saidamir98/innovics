@@ -8,8 +8,7 @@ const StartupSchema = new Schema({
     required: true
   },
   firstname: {
-    type: String,
-    required: true
+    type: String
   },
   lastname: {
     type: String
@@ -28,8 +27,7 @@ const StartupSchema = new Schema({
   categories: [
     {
       type: Schema.Types.ObjectId,
-      ref: 'Categories',
-      required: true
+      ref: 'Categories'
     }
   ],
   pRequest: {

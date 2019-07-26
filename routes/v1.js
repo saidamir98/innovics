@@ -24,10 +24,10 @@ const userController = require('../controllers/user');
 router.post('/users/register', userController.validate('registerUser'), userController.register);
 router.get('/users/me', auth, userController.me);
 router.post('/users/login', userController.validate('loginUser'), userController.login);
-// router.get('users/:id', userController.getById);
-// router.get('users/', userController.list);
-// router.put('users/:id', userController.update);
-// router.delete('users/:id', userController.delete);
+// router.get('/users/:id', userController.getById);
+// router.get('/users/', userController.list);
+// router.put('/users/:id', userController.update);
+// router.delete('/users/:id', userController.delete);
 
 const categoryController = require('../controllers/category');
 router.post(

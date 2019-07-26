@@ -10,13 +10,13 @@ const userRoles = [
   },
   {
     _id: ObjectId('fffffffffffffffffffffff1'),
-    role: 'vendor',
+    role: 'user',
     permissionLevel: '50'
   },
   {
     _id: ObjectId('fffffffffffffffffffffff2'),
-    role: 'customer',
-    permissionLevel: '100'
+    role: 'expert',
+    permissionLevel: '70'
   }
 ];
 

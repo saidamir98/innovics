@@ -6,7 +6,7 @@ const runSeeders = async () => {
     await require('./userRole')();
     await require('./user')();
     await require('./categories')();
-    // await require('./startup')();
+    await require('./startup')();
 
     console.log('\x1b[36m Seeding Completed \x1b[0m');
   } catch (err) {
