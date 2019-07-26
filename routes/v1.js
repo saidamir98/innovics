@@ -21,9 +21,9 @@ router.put(
 router.delete('/user-roles/:id', auth, userRoleController.delete);
 
 const userController = require('../controllers/user');
-router.post('users/register', userController.validate('registerUser'), userController.register);
-router.get('users/me', auth, userController.me);
-router.post('users/login', userController.validate('loginUser'), userController.login);
+router.post('/users/register', userController.validate('registerUser'), userController.register);
+router.get('/users/me', auth, userController.me);
+router.post('/users/login', userController.validate('loginUser'), userController.login);
 // router.get('users/:id', userController.getById);
 // router.get('users/', userController.list);
 // router.put('users/:id', userController.update);
