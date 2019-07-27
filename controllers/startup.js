@@ -14,8 +14,8 @@ module.exports = {
         userId: req.user.id,
         firstname: req.body.firstname,
         lastname: req.body.lastname,
-        websiteName: req.body.websiteName,
-        websiteUrl: req.body.websiteUrl,
+        title: req.body.title,
+        description: req.body.description,
         fileLinks: req.body.fileLinks,
         categories: req.body.categories,
         pRequest: req.body.pRequest
@@ -59,8 +59,8 @@ module.exports = {
         userId: req.user.id,
         firstname: req.body.firstname,
         lastname: req.body.lastname,
-        websiteName: req.body.websiteName,
-        websiteUrl: req.body.websiteUrl,
+        title: req.body.title,
+        description: req.body.description,
         fileLinks: req.body.fileLinks,
         categories: req.body.categories,
         pRequest: req.body.pRequest
@@ -88,7 +88,7 @@ module.exports = {
 module.exports.validate = method => {
   switch (method) {
     case 'postStartup': {
-      return [check('websiteName', 'Please provide a Startup websiteName').exists()];
+      return [check('title', 'Please provide a Startup title').exists()];
     }
   }
 };

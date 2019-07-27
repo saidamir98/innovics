@@ -13,10 +13,10 @@ const StartupSchema = new Schema({
   lastname: {
     type: String
   },
-  websiteName: {
+  title: {
     type: String
   },
-  websiteUrl: {
+  description: {
     type: String
   },
   fileLinks: [
@@ -26,8 +26,7 @@ const StartupSchema = new Schema({
   ],
   categories: [
     {
-      type: Schema.Types.ObjectId,
-      ref: 'Categories'
+      type: String
     }
   ],
   pRequest: {
