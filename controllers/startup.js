@@ -48,6 +48,15 @@ module.exports = {
     }
   },
 
+  async getByUserId(req, res) {
+    try {
+      let startups = await startupService.getByUserId(req.user.id);
+      return ReS(res, { payload: startups }, 200);
+    } catch (err) {
+      return ReE(res, err);
+    }
+  },
+
   async update(req, res) {
     try {
       const errors = validationResult(req);

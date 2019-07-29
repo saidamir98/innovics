@@ -45,6 +45,15 @@ module.exports = {
     }
   },
 
+  async getByUserId(userId) {
+    try {
+      let startups = await Startup.find({ userID });
+      return startups;
+    } catch (err) {
+      throw err;
+    }
+  },
+
   async update(id, newProduct) {
     try {
       validateId(id);

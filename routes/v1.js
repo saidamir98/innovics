@@ -49,6 +49,7 @@ router.delete('/categories/:id', auth, categoryController.delete);
 const startupController = require('../controllers/startup');
 router.post('/startups', auth, startupController.validate('postStartup'), startupController.create);
 router.get('/startups', auth, startupController.list);
+router.get('/users/me/startups', auth, startupController.getByUserId);
 router.get('/startups/:id', auth, startupController.getById);
 router.put(
   '/startups/:id',
