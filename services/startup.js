@@ -47,7 +47,7 @@ module.exports = {
 
   async getByUserId(userId) {
     try {
-      let startups = await Startup.find({ userID });
+      let startups = await Startup.find({ userId });
       return startups;
     } catch (err) {
       throw err;
